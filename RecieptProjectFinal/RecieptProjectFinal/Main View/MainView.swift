@@ -8,6 +8,8 @@ import SwiftUI
 
 struct MainView: View {
     
+    // The text that will be changed and saved starts with information for the user
+    
     @State private var recognizedText = "Tap button to start scanning"
     
     var body: some View {
@@ -18,7 +20,7 @@ struct MainView: View {
                          Image(systemName: "house")
                          Text("Home")
                      }
-               ScanView()
+               ScanView(recognizedText: $recognizedText)
                     .tabItem {
                         Image(systemName: "camera")
                         Text("Scan")

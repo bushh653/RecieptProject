@@ -25,6 +25,7 @@
 		4AA7B7C225E6F674000D9666 /* TabDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7B7C125E6F674000D9666 /* TabDetailsView.swift */; };
 		4AA7B7CA25E6F786000D9666 /* PageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7B7C925E6F786000D9666 /* PageTabView.swift */; };
 		4AA7B7D225E6F817000D9666 /* WalkthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7B7D125E6F817000D9666 /* WalkthroughView.swift */; };
+		4AA7B7DD25E6FA1B000D9666 /* ScanDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7B7DC25E6FA1B000D9666 /* ScanDocumentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		4AA7B7C125E6F674000D9666 /* TabDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabDetailsView.swift; sourceTree = "<group>"; };
 		4AA7B7C925E6F786000D9666 /* PageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTabView.swift; sourceTree = "<group>"; };
 		4AA7B7D125E6F817000D9666 /* WalkthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughView.swift; sourceTree = "<group>"; };
+		4AA7B7DC25E6FA1B000D9666 /* ScanDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanDocumentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				4AA7B79B25E6F286000D9666 /* ScanView.swift */,
+				4AA7B7DC25E6FA1B000D9666 /* ScanDocumentView.swift */,
 			);
 			path = "Reciept Scan";
 			sourceTree = "<group>";
@@ -372,6 +375,7 @@
 				4AA7B7B025E6F54B000D9666 /* Data.swift in Sources */,
 				4AA7B7D225E6F817000D9666 /* WalkthroughView.swift in Sources */,
 				4A3A5DF425E69A2700DF5E41 /* RecieptProjectFinalApp.swift in Sources */,
+				4AA7B7DD25E6FA1B000D9666 /* ScanDocumentView.swift in Sources */,
 				4AA7B7B525E6F5FA000D9666 /* Gradient View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
