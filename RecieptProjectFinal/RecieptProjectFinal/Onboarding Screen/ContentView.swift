@@ -7,15 +7,24 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
-}
+//Checks if we should display the onboarding screens with the value in the AppStorage or goes to MainView
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+struct ContentView: View {
+    
+    @AppStorage("onboarding") var onboarding = true
+    
+    var body: some View {
+        Group{
+            if onboarding{
+                ZStack{
+                    VStack{
+                        WalkthroughView(onboarding: $onboarding)
+                    }
+                }
+            }
+            else{
+                MainView()
+            }
+        }
     }
 }
