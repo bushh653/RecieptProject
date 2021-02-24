@@ -13,6 +13,12 @@
 		4A3A5DFB25E69A3D00DF5E41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A3A5DFA25E69A3D00DF5E41 /* Preview Assets.xcassets */; };
 		4A3A5E0625E69A3E00DF5E41 /* RecieptProjectFinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A5E0525E69A3E00DF5E41 /* RecieptProjectFinalTests.swift */; };
 		4A3A5E1125E69A3F00DF5E41 /* RecieptProjectFinalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A5E1025E69A3F00DF5E41 /* RecieptProjectFinalUITests.swift */; };
+		4AA7B78F25E6F238000D9666 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7B78E25E6F238000D9666 /* MainView.swift */; };
+		4AA7B79725E6F272000D9666 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7B79625E6F272000D9666 /* HomeView.swift */; };
+		4AA7B79C25E6F286000D9666 /* ScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7B79B25E6F286000D9666 /* ScanView.swift */; };
+		4AA7B7A125E6F294000D9666 /* FileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7B7A025E6F294000D9666 /* FileView.swift */; };
+		4AA7B7A625E6F2A7000D9666 /* ShoppingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7B7A525E6F2A7000D9666 /* ShoppingView.swift */; };
+		4AA7B7AB25E6F2BB000D9666 /* TrendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7B7AA25E6F2BB000D9666 /* TrendsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +51,12 @@
 		4A3A5E0C25E69A3F00DF5E41 /* RecieptProjectFinalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecieptProjectFinalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A3A5E1025E69A3F00DF5E41 /* RecieptProjectFinalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecieptProjectFinalUITests.swift; sourceTree = "<group>"; };
 		4A3A5E1225E69A3F00DF5E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AA7B78E25E6F238000D9666 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		4AA7B79625E6F272000D9666 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4AA7B79B25E6F286000D9666 /* ScanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanView.swift; sourceTree = "<group>"; };
+		4AA7B7A025E6F294000D9666 /* FileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileView.swift; sourceTree = "<group>"; };
+		4AA7B7A525E6F2A7000D9666 /* ShoppingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingView.swift; sourceTree = "<group>"; };
+		4AA7B7AA25E6F2BB000D9666 /* TrendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +107,14 @@
 		4A3A5DF225E69A2700DF5E41 /* RecieptProjectFinal */ = {
 			isa = PBXGroup;
 			children = (
-				4A3A5DF325E69A2700DF5E41 /* RecieptProjectFinalApp.swift */,
-				4A3A5DF525E69A2700DF5E41 /* ContentView.swift */,
+				4AA7B78825E6F139000D9666 /* Main View */,
+				4AA7B78625E6F117000D9666 /* Onboarding Screen */,
+				4AA7B78725E6F12C000D9666 /* Settings */,
+				4AA7B78925E6F168000D9666 /* Home View */,
+				4AA7B78A25E6F175000D9666 /* Reciept Scan */,
+				4AA7B78B25E6F17D000D9666 /* Files */,
+				4AA7B78C25E6F1A5000D9666 /* Shopping List */,
+				4AA7B78D25E6F1BB000D9666 /* Trends */,
 				4A3A5DF725E69A3D00DF5E41 /* Assets.xcassets */,
 				4A3A5DFC25E69A3E00DF5E41 /* Info.plist */,
 				4A3A5DF925E69A3D00DF5E41 /* Preview Content */,
@@ -128,6 +146,70 @@
 				4A3A5E1225E69A3F00DF5E41 /* Info.plist */,
 			);
 			path = RecieptProjectFinalUITests;
+			sourceTree = "<group>";
+		};
+		4AA7B78625E6F117000D9666 /* Onboarding Screen */ = {
+			isa = PBXGroup;
+			children = (
+				4A3A5DF525E69A2700DF5E41 /* ContentView.swift */,
+			);
+			path = "Onboarding Screen";
+			sourceTree = "<group>";
+		};
+		4AA7B78725E6F12C000D9666 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		4AA7B78825E6F139000D9666 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				4A3A5DF325E69A2700DF5E41 /* RecieptProjectFinalApp.swift */,
+				4AA7B78E25E6F238000D9666 /* MainView.swift */,
+			);
+			path = "Main View";
+			sourceTree = "<group>";
+		};
+		4AA7B78925E6F168000D9666 /* Home View */ = {
+			isa = PBXGroup;
+			children = (
+				4AA7B79625E6F272000D9666 /* HomeView.swift */,
+			);
+			path = "Home View";
+			sourceTree = "<group>";
+		};
+		4AA7B78A25E6F175000D9666 /* Reciept Scan */ = {
+			isa = PBXGroup;
+			children = (
+				4AA7B79B25E6F286000D9666 /* ScanView.swift */,
+			);
+			path = "Reciept Scan";
+			sourceTree = "<group>";
+		};
+		4AA7B78B25E6F17D000D9666 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				4AA7B7A025E6F294000D9666 /* FileView.swift */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		4AA7B78C25E6F1A5000D9666 /* Shopping List */ = {
+			isa = PBXGroup;
+			children = (
+				4AA7B7A525E6F2A7000D9666 /* ShoppingView.swift */,
+			);
+			path = "Shopping List";
+			sourceTree = "<group>";
+		};
+		4AA7B78D25E6F1BB000D9666 /* Trends */ = {
+			isa = PBXGroup;
+			children = (
+				4AA7B7AA25E6F2BB000D9666 /* TrendsView.swift */,
+			);
+			path = Trends;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +341,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AA7B7A125E6F294000D9666 /* FileView.swift in Sources */,
 				4A3A5DF625E69A2700DF5E41 /* ContentView.swift in Sources */,
+				4AA7B79725E6F272000D9666 /* HomeView.swift in Sources */,
+				4AA7B79C25E6F286000D9666 /* ScanView.swift in Sources */,
+				4AA7B7A625E6F2A7000D9666 /* ShoppingView.swift in Sources */,
+				4AA7B78F25E6F238000D9666 /* MainView.swift in Sources */,
+				4AA7B7AB25E6F2BB000D9666 /* TrendsView.swift in Sources */,
 				4A3A5DF425E69A2700DF5E41 /* RecieptProjectFinalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
