@@ -26,6 +26,8 @@
 		4AA7B7CA25E6F786000D9666 /* PageTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7B7C925E6F786000D9666 /* PageTabView.swift */; };
 		4AA7B7D225E6F817000D9666 /* WalkthroughView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7B7D125E6F817000D9666 /* WalkthroughView.swift */; };
 		4AA7B7DD25E6FA1B000D9666 /* ScanDocumentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7B7DC25E6FA1B000D9666 /* ScanDocumentView.swift */; };
+		4AA7B7E525E6FF85000D9666 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7B7E425E6FF85000D9666 /* Node.swift */; };
+		4AA7B7EA25E70071000D9666 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7B7E925E70071000D9666 /* LinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		4AA7B7C925E6F786000D9666 /* PageTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTabView.swift; sourceTree = "<group>"; };
 		4AA7B7D125E6F817000D9666 /* WalkthroughView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughView.swift; sourceTree = "<group>"; };
 		4AA7B7DC25E6FA1B000D9666 /* ScanDocumentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanDocumentView.swift; sourceTree = "<group>"; };
+		4AA7B7E425E6FF85000D9666 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		4AA7B7E925E70071000D9666 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,6 +217,8 @@
 			isa = PBXGroup;
 			children = (
 				4AA7B7A025E6F294000D9666 /* FileView.swift */,
+				4AA7B7E925E70071000D9666 /* LinkedList.swift */,
+				4AA7B7E425E6FF85000D9666 /* Node.swift */,
 			);
 			path = Files;
 			sourceTree = "<group>";
@@ -373,9 +379,11 @@
 				4AA7B7AB25E6F2BB000D9666 /* TrendsView.swift in Sources */,
 				4AA7B7CA25E6F786000D9666 /* PageTabView.swift in Sources */,
 				4AA7B7B025E6F54B000D9666 /* Data.swift in Sources */,
+				4AA7B7E525E6FF85000D9666 /* Node.swift in Sources */,
 				4AA7B7D225E6F817000D9666 /* WalkthroughView.swift in Sources */,
 				4A3A5DF425E69A2700DF5E41 /* RecieptProjectFinalApp.swift in Sources */,
 				4AA7B7DD25E6FA1B000D9666 /* ScanDocumentView.swift in Sources */,
+				4AA7B7EA25E70071000D9666 /* LinkedList.swift in Sources */,
 				4AA7B7B525E6F5FA000D9666 /* Gradient View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
