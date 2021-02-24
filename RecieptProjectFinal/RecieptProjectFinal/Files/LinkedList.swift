@@ -25,6 +25,22 @@ class LinkedList{
         return array
     }
     
+    func length() -> Int{
+        var number = 0
+        var finished = false
+        var top_of_list = self.head
+        while finished != true{
+            if top_of_list != nil {
+                number += 1
+                top_of_list = top_of_list!.next
+            }
+            else{
+                finished = true
+            }
+        }
+        return number
+    }
+    
     func add(data: String){
         let top_of_list = self.head
         while top_of_list != nil{
@@ -57,8 +73,8 @@ class LinkedList{
     
     //INIT
     
-    init(head: String) {
-        self.head = nil
+    init(head: Node) {
+        self.head = head
     }
     
 }
