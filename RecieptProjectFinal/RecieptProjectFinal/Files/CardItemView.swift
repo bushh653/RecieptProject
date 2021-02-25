@@ -16,7 +16,6 @@ struct CardItemView: View {
         VStack{
             
             Text("Item")
-                .font(.title)
                 .bold()
             
             Text(data)

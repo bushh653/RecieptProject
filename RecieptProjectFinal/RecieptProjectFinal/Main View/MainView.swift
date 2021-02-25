@@ -25,7 +25,7 @@ struct MainView: View {
                         Image(systemName: "camera")
                         Text("Scan")
                     }
-                FileView()
+                CardView(recognizedText: $recognizedText)
                     .tabItem {
                         Image(systemName: "folder")
                         Text("Files")

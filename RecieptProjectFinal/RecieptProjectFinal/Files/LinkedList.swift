@@ -20,7 +20,12 @@ class LinkedList{
         var top_of_list = self.head
         while top_of_list != nil {
             array.append(top_of_list!.data)
-            top_of_list = top_of_list!.next
+            if top_of_list?.next == nil{
+                top_of_list = nil
+            }
+            else{
+                top_of_list = top_of_list!.next
+            }
         }
         return array
     }
@@ -43,11 +48,9 @@ class LinkedList{
     
     func add(data: String){
         let top_of_list = self.head
-        while top_of_list != nil{
-            let newNode = Node(data: data)
-            newNode.next = top_of_list?.next
-            top_of_list?.next = newNode
-        }
+        let newNode = Node(data: data)
+        newNode.next = top_of_list?.next
+        top_of_list?.next = newNode
     }
     
     func remove(data: String){
