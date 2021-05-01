@@ -12,15 +12,23 @@ struct CardItemView: View {
     let data: String
     
     var body: some View {
-        
+      
         VStack{
             
-            Text("Item")
-                .bold()
-            
-            Text(data)
-                .foregroundColor(Color(#colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1)))
-                .padding()
+            ScrollView{
+                    
+                    Text("Receipt")
+                        .bold()
+                        .padding(.top, 40)
+                    
+                    Text(data)
+                        .foregroundColor(Color(#colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1)))
+                        .padding()
+                
+            }.frame(width: 400, height: 600, alignment: .center)
+            .background(GradientView())
+            .cornerRadius(30)
+            .padding(.horizontal, 20)
             
         }
         

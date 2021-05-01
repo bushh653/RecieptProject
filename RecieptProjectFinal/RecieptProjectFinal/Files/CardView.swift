@@ -14,27 +14,22 @@ struct CardView: View {
     
     var body: some View {
         
-        VStack{
-            
+        ScrollView(.horizontal){
+                
             HStack{
-                
-                ForEach(linkedList.traversal, id: \.self) { value in
-                    CardItemView(data: value)
-               }
-                
-            }
-            VStack{
                     
                 Button {
                     linkedList.add(data: recognizedText)
                     linkedList.traverse()
-                    print(linkedList.traverse())
                 } label: {
                     Text("Add Receipt")
                 }
                 
+                ForEach(linkedList.traversal, id: \.self) { value in
+                    CardItemView(data: value)
+                }
+                    
             }
-
             
         }
         
