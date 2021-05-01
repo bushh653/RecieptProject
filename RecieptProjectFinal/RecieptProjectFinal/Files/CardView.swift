@@ -10,7 +10,7 @@ import SwiftUI
 struct CardView: View {
     
     @Binding var recognizedText: String
-    @State var linkedList = LinkedList(head: Node(data: "This is an example reciept"))
+    @ObservedObject var linkedList = LinkedList(head: Node(data: "This is an example reciept"))
     
     var body: some View {
         
@@ -18,16 +18,16 @@ struct CardView: View {
             
             HStack{
                 
-                
-                //ForEach(0..<linkedList.length(), id: \.self) { index in
-                    //CardItemView(data: index)
-               // }
+                ForEach(linkedList.traversal, id: \.self) { value in
+                    CardItemView(data: value)
+               }
                 
             }
             VStack{
                     
                 Button {
                     linkedList.add(data: recognizedText)
+                    linkedList.traverse()
                     print(linkedList.traverse())
                 } label: {
                     Text("Add Receipt")

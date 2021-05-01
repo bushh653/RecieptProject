@@ -7,15 +7,16 @@
 
 import Foundation
 
-class LinkedList{
+class LinkedList: ObservableObject{
     
     //PROPERTIES
     
     var head: Node?
+    @Published var traversal: [String] = []
     
     //METHODS
     
-    func traverse() -> Array<String>{
+    func traverse(){
         var array: Array<String> = []
         var top_of_list = self.head
         while top_of_list != nil {
@@ -27,7 +28,7 @@ class LinkedList{
                 top_of_list = top_of_list!.next
             }
         }
-        return array
+        self.traversal = array
     }
     
     func length() -> Int{
