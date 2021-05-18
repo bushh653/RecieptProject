@@ -30,7 +30,7 @@ struct MainView: View {
                         Image(systemName: "folder")
                         Text("Files")
                     }
-                ShoppingView()
+                ShoppingView().navigationBarHidden(true)
                     .tabItem {
                         Image(systemName: "list.dash")
                         Text("Shopping List")
