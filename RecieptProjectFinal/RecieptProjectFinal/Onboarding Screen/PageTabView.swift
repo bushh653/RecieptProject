@@ -21,12 +21,12 @@ struct PageTabView: View {
             ForEach(tabs.indices, id: \.self) { index in
                 TabDetailsView(index: index)
             }
+            .frame(width: 350, height: 600, alignment: .center)
+            .background(GradientView())
+            .cornerRadius(30)
+            .padding(.horizontal, 20)
             
         }.tabViewStyle(PageTabViewStyle())
-        .frame(width: 400, height: 600, alignment: .center)
-        .background(GradientView())
-        .cornerRadius(30)
-        .padding(.horizontal, 20)
         
     }
 }

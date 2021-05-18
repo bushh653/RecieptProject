@@ -10,6 +10,7 @@ import SwiftUI
 struct CardItemView: View {
     
     let data: String
+    @ObservedObject var linkedList: LinkedList
     
     var body: some View {
       
@@ -17,6 +18,13 @@ struct CardItemView: View {
             
             ScrollView{
                     
+                    Button {
+                        linkedList.remove(data: data)
+                        linkedList.traverse()
+                    } label: {
+                        Text("Delete Receipt")
+                    }
+                
                     Text("Receipt")
                         .bold()
                         .padding(.top, 40)
