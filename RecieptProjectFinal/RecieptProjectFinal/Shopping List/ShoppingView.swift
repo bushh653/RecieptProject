@@ -32,16 +32,22 @@ struct ShoppingView: View {
     var searchBar : some View {
         HStack{
             TextField("Enter in a new item", text: self.$new)
+                .padding(10)
+                .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.green, lineWidth: 2))
+                .background(RoundedRectangle(cornerRadius: 10).fill(Color.white))
             Button(action: self.addNewToDo, label: {
                 Text("Add")
                     .fontWeight(.bold)
-            })
+            }).padding()
+            .foregroundColor(.white)
+            .background(Capsule().fill(Color.green))
         }
     }
     
     var body: some View {
         NavigationView{
             ZStack{
+                Color(.black).ignoresSafeArea(.all)
                 VStack {
                     searchBar.padding()
                     List {
@@ -51,7 +57,7 @@ struct ShoppingView: View {
                         .onDelete(perform: self.delete)
                     }
                 }
-            }.navigationBarItems(trailing: EditButton())
+            }.navigationBarItems(trailing: EditButton().foregroundColor(.white))
             .navigationBarTitle("Shopping List")
         }
     }

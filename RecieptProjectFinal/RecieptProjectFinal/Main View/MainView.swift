@@ -8,6 +8,18 @@ import SwiftUI
 
 struct MainView: View {
     
+    init() {
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithTransparentBackground()
+            appearance.largeTitleTextAttributes = [
+                NSAttributedString.Key.foregroundColor : UIColor.white
+            ]
+            UINavigationBar.appearance().scrollEdgeAppearance = appearance
+            UINavigationBar.appearance().standardAppearance = appearance
+            UINavigationBar.appearance().tintColor = .white
+            
+        }
+    
     // The text that will be changed and saved starts with information for the user
     
     @State private var recognizedText = "Tap button to start scanning"
@@ -20,7 +32,7 @@ struct MainView: View {
                          Image(systemName: "house")
                          Text("Home")
                      }
-               ScanView(recognizedText: $recognizedText)
+               ScanView(recognizedText: $recognizedText).navigationBarHidden(true)
                     .tabItem {
                         Image(systemName: "camera")
                         Text("Scan")

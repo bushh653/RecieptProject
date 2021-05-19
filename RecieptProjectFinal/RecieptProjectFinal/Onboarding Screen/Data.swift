@@ -14,7 +14,6 @@ let tabs = [
     Page(image: "gettingStarted", title: "Getting Started", text: "Have a look at the instructions"),
     Page(image: "tools", title: "Tools", text: "You can use the tools to help your daily life"),
     Page(image: "tips", title: "Tips", text: "Here is a handy tip: Point the camera the right way!")
-    
 ]
 
 // Creating a structure for what each onboarding screen will look like

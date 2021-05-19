@@ -14,26 +14,21 @@ struct CardView: View {
     @ObservedObject var linkedList = LinkedList(head: Node(data: "This is an example reciept, please delete this!"))
     
     var body: some View {
-        
-        ScrollView(.horizontal){
-                
-            HStack{
-                    
-                Button {
-                    linkedList.add(data: recognizedText)
-                    linkedList.traverse()
-                } label: {
-                    Text("Add Receipt")
-                }.padding(30)
-                
-                ForEach(linkedList.traversal, id: \.self) { value in
-                    CardItemView(data: value, linkedList: linkedList)
+        ZStack{
+            Color(.black).ignoresSafeArea(.all)
+            ScrollView(.horizontal){
+                HStack{
+                    Button {
+                        linkedList.add(data: recognizedText)
+                        linkedList.traverse()
+                    } label: {
+                        Text("Add Receipt")
+                    }.padding(30)
+                    ForEach(linkedList.traversal, id: \.self) { value in
+                        CardItemView(data: value, linkedList: linkedList)
+                    }
                 }
-                    
             }
-            
         }
-        
     }
-    
 }

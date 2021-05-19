@@ -23,14 +23,19 @@ struct CardItemView: View {
                         linkedList.traverse()
                     } label: {
                         Text("Delete Receipt")
-                    }
+                            .foregroundColor(Color("Charcoal"))
+                    }.padding()
+                    .background(Color("Olivine"))
+                    .cornerRadius(30)
+                    .padding()
                 
                     Text("Receipt")
                         .bold()
+                        .foregroundColor(Color("Charcoal"))
                         .padding(.top, 40)
                     
                     Text(data)
-                        .foregroundColor(Color(#colorLiteral(red: 0.5725490451, green: 0, blue: 0.2313725501, alpha: 1)))
+                        .foregroundColor(Color("Charcoal"))
                         .padding()
                 
             }.frame(width: 400, height: 600, alignment: .center)
