@@ -47,7 +47,7 @@ struct MainView: View {
                         Image(systemName: "list.dash")
                         Text("Shopping List")
                     }
-                TrendsView()
+                TrendsView().navigationBarHidden(true)
                     .tabItem {
                         Image(systemName: "line.diagonal.arrow")
                         Text("Trends")

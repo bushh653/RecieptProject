@@ -30,6 +30,8 @@
 		4AA7B7EA25E70071000D9666 /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7B7E925E70071000D9666 /* LinkedList.swift */; };
 		4AA7B7EF25E70BE5000D9666 /* CardItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7B7EE25E70BE5000D9666 /* CardItemView.swift */; };
 		4AA7B7F725E70BF2000D9666 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7B7F625E70BF2000D9666 /* CardView.swift */; };
+		4AE4F8352656B6390027C4B8 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 4AE4F8342656B6390027C4B8 /* SwiftUICharts */; };
+		4AE4F8392656C0A50027C4B8 /* BarChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE4F8382656C0A50027C4B8 /* BarChartData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,7 @@
 		4AA7B7E925E70071000D9666 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		4AA7B7EE25E70BE5000D9666 /* CardItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardItemView.swift; sourceTree = "<group>"; };
 		4AA7B7F625E70BF2000D9666 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		4AE4F8382656C0A50027C4B8 /* BarChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A39B5E826551C9600BD5965 /* iColor in Frameworks */,
+				4AE4F8352656B6390027C4B8 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				4AA7B7AA25E6F2BB000D9666 /* TrendsView.swift */,
+				4AE4F8382656C0A50027C4B8 /* BarChartData.swift */,
 			);
 			path = Trends;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 			name = RecieptProjectFinal;
 			packageProductDependencies = (
 				4A39B5E726551C9600BD5965 /* iColor */,
+				4AE4F8342656B6390027C4B8 /* SwiftUICharts */,
 			);
 			productName = RecieptProjectFinal;
 			productReference = 4A3A5DF025E69A2700DF5E41 /* RecieptProjectFinal.app */;
@@ -336,6 +342,7 @@
 			mainGroup = 4A3A5DE725E69A2700DF5E41;
 			packageReferences = (
 				4A39B5E626551C9600BD5965 /* XCRemoteSwiftPackageReference "iColor" */,
+				4AE4F8332656B6390027C4B8 /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 4A3A5DF125E69A2700DF5E41 /* Products */;
 			projectDirPath = "";
@@ -384,6 +391,7 @@
 				4AA7B7C225E6F674000D9666 /* TabDetailsView.swift in Sources */,
 				4AA7B79725E6F272000D9666 /* HomeView.swift in Sources */,
 				4AA7B7EF25E70BE5000D9666 /* CardItemView.swift in Sources */,
+				4AE4F8392656C0A50027C4B8 /* BarChartData.swift in Sources */,
 				4AA7B79C25E6F286000D9666 /* ScanView.swift in Sources */,
 				4AA7B7F725E70BF2000D9666 /* CardView.swift in Sources */,
 				4AA7B78F25E6F238000D9666 /* MainView.swift in Sources */,
@@ -726,6 +734,14 @@
 				minimumVersion = 0.1.1;
 			};
 		};
+		4AE4F8332656B6390027C4B8 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.5;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -733,6 +749,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4A39B5E626551C9600BD5965 /* XCRemoteSwiftPackageReference "iColor" */;
 			productName = iColor;
+		};
+		4AE4F8342656B6390027C4B8 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AE4F8332656B6390027C4B8 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
