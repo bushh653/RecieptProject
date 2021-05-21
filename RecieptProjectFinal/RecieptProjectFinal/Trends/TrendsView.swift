@@ -9,6 +9,9 @@ import SwiftUI
 import SwiftUICharts
 
 struct TrendsView: View {
+    
+    @Binding var barchartdata: [(String, Int)]
+    
     var body: some View {
         ZStack{
             Color(.black).ignoresSafeArea(.all)

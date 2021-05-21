@@ -7,9 +7,4 @@
 
 import Foundation
 
-var barchartdata = [
-    ("Eggs", 5),
-    ("Flour", 6),
-    ("Salt", 10),
-    ("Butter", 9)
-]
+

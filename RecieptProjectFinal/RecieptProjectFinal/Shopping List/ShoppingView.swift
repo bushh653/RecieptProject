@@ -29,6 +29,8 @@ struct ShoppingView: View {
     @State var errorMessage = ""
     @State private var showingError = false
     
+    @Binding var barchartdata: [(String, Int)]
+    
     var searchBar : some View {
         HStack{
             TextField("Enter in a new item", text: self.$new)
