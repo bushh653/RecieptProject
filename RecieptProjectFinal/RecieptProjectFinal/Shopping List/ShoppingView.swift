@@ -8,28 +8,16 @@
 import SwiftUI
 import Combine
 import Foundation
-
-
-struct Task: Identifiable{
-    var id = UUID()
-    var toDoItem = String()
-}
-
-class TaskStore: ObservableObject{
-    @Published var tasks = [Task]()
-}
+import CoreData
 
 struct ShoppingView: View {
     
-    @StateObject var taskStore = TaskStore()
-    @Environment(\.presentationMode) var mode: Binding<PresentationMode>
+    @Environment(\.managedObjectContext) var moc
+    @FetchRequest(entity: ShoppingItem.entity(), sortDescriptors: []) var items: FetchedResults<ShoppingItem>
     
     @State var new: String = ""
-    @State var errorTitle = ""
-    @State var errorMessage = ""
-    @State private var showingError = false
-    
     @Binding var barchartdata: [(String, Int)]
+    @Binding var linegraphdata: [Double]
     
     var searchBar : some View {
         HStack{
@@ -39,7 +27,11 @@ struct ShoppingView: View {
                 .background(RoundedRectangle(cornerRadius: 10).fill(Color.white))
             Button(action: {
                 addNewBarChartData(data: self.new)
-                self.addNewToDo()
+                addNewLineGraphData()
+                let item = ShoppingItem(context: self.moc)
+                item.name = new
+                try? self.moc.save()
+                self.new = ""
             }, label: {
                 Text("Add")
                     .fontWeight(.bold)
@@ -56,26 +48,23 @@ struct ShoppingView: View {
                 VStack {
                     searchBar.padding()
                     List {
-                        ForEach(self.taskStore.tasks) { task in
-                            Text(task.toDoItem)
-                        }.onMove(perform: self.move)
-                        .onDelete(perform: self.delete)
+                        ForEach(items, id: \.id) { item in
+                            Text(item.name ?? "No Items")
+                        }.onDelete(perform: { indexSet in
+                            for index in indexSet{
+                                moc.delete(items[index])
+                            }
+                            do{
+                                try moc.save()
+                            }catch{
+                                print("Error")
+                            }
+                        })
                     }
                 }
             }.navigationBarItems(trailing: EditButton().foregroundColor(.white))
             .navigationBarTitle("Shopping List")
         }
-    }
-    func move(from source : IndexSet, to destination : Int) {
-        taskStore.tasks.move(fromOffsets: source, toOffset: destination)
-    }
-    func delete(at offsets : IndexSet) {
-        taskStore.tasks.remove(atOffsets: offsets)
-    }
-    func addNewToDo() {
-        taskStore.tasks.append(Task(toDoItem: new))
-        self.new = ""
-        //Add auto generated id in the future
     }
     func addNewBarChartData(data: String) {
         var found = false
@@ -91,5 +80,12 @@ struct ShoppingView: View {
         if found == false{
             barchartdata.append(("\(data)", 1))
         }
+    }
+    func addNewLineGraphData(){
+        var total = 0
+        for i in barchartdata{
+            total += i.1
+        }
+        linegraphdata.append(Double(total))
     }
 }
