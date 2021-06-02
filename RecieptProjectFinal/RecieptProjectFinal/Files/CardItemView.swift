@@ -11,6 +11,7 @@ struct CardItemView: View {
     
     let data: String
     @ObservedObject var linkedList: LinkedList
+    @Binding var searchText: String
     
     var body: some View {
       
@@ -20,7 +21,7 @@ struct CardItemView: View {
                     
                     Button {
                         linkedList.remove(data: data)
-                        linkedList.traverse()
+                        linkedList.traverse(searchText: searchText)
                     } label: {
                         Text("Delete Receipt")
                             .foregroundColor(.white)

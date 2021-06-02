@@ -16,16 +16,32 @@ class LinkedList: ObservableObject{
     
     //METHODS
     
-    func traverse(){
+    func traverse(searchText: String){
         var array: Array<String> = []
         var top_of_list = self.head
         while top_of_list != nil {
-            array.append(top_of_list!.data)
-            if top_of_list?.next == nil{
-                top_of_list = nil
+            if searchText != ""{
+                if top_of_list!.data.contains(searchText){
+                    array.append(top_of_list!.data)
+                    if top_of_list?.next == nil{
+                        top_of_list = nil
+                    }
+                    else{
+                        top_of_list = top_of_list!.next
+                    }
+                }
+                else{
+                    top_of_list = top_of_list!.next
+                }
             }
-            else{
-                top_of_list = top_of_list!.next
+            else if searchText == ""{
+                array.append(top_of_list!.data)
+                if top_of_list?.next == nil{
+                    top_of_list = nil
+                }
+                else{
+                    top_of_list = top_of_list!.next
+                }
             }
         }
         self.traversal = array
