@@ -22,9 +22,8 @@ struct MainView: View {
     
     // The text that will be changed and saved starts with information for the user
     
-    @State private var recognizedText = "Tap button to scan receipt"
+    @State private var recognizedText = "Tap button to start scanning"
     @State var barchartdata: [(String, Int)] = []
-    @State var linegraphdata: [Double] = []
     
     var body: some View {
         NavigationView{
@@ -44,12 +43,12 @@ struct MainView: View {
                         Image(systemName: "folder")
                         Text("Files")
                     }
-                ShoppingView(barchartdata: $barchartdata, linegraphdata: $linegraphdata).navigationBarHidden(true)
+                ShoppingView(barchartdata: $barchartdata).navigationBarHidden(true)
                     .tabItem {
                         Image(systemName: "list.dash")
                         Text("Shopping List")
                     }
-                TrendsView(barchartdata: $barchartdata, linegraphdata: $linegraphdata).navigationBarHidden(true)
+                TrendsView(barchartdata: $barchartdata).navigationBarHidden(true)
                     .tabItem {
                         Image(systemName: "line.diagonal.arrow")
                         Text("Trends")

@@ -23,10 +23,7 @@ struct CardView: View {
                         linkedList.traverse()
                     } label: {
                         Text("Add Receipt")
-                    }.padding()
-                    .foregroundColor(.white)
-                    .background(Color("Charcoal"))
-                    .cornerRadius(30)
+                    }.padding(30)
                     ForEach(linkedList.traversal, id: \.self) { value in
                         CardItemView(data: value, linkedList: linkedList)
                     }

@@ -44,10 +44,10 @@ struct ScanView: View {
                             Text("Start Scanning")
                         }.padding()
                         .foregroundColor(.white)
-                        .background(Capsule().fill(Color("Charcoal")))
+                        .background(Capsule().fill(Color.blue))
                     }.padding()
                 }
-            }.navigationBarTitle("Receipt Scanner")
+            }.navigationBarTitle("Text Recognition")
             // Sheet view for the camera to scan, passes in recognised text to change it's value and pass it back
             .sheet(isPresented: $showingScanningView) {
                 ScanDocumentView(recognizedText: self.$recognizedText)
