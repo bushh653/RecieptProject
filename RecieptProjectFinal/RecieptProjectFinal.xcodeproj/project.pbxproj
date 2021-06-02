@@ -14,7 +14,7 @@
 		4A3A5DFB25E69A3D00DF5E41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A3A5DFA25E69A3D00DF5E41 /* Preview Assets.xcassets */; };
 		4A3A5E0625E69A3E00DF5E41 /* RecieptProjectFinalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A5E0525E69A3E00DF5E41 /* RecieptProjectFinalTests.swift */; };
 		4A3A5E1125E69A3F00DF5E41 /* RecieptProjectFinalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A5E1025E69A3F00DF5E41 /* RecieptProjectFinalUITests.swift */; };
-		4A91439E2667D72A0004D3CE /* ShoppingModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A91439C2667D72A0004D3CE /* ShoppingModel.xcdatamodeld */; };
+		4A91439E2667D72A0004D3CE /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A91439C2667D72A0004D3CE /* CoreData.xcdatamodeld */; };
 		4A9143C62667E9DE0004D3CE /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9143C52667E9DE0004D3CE /* Persistance.swift */; };
 		4AA175C3265465CB00004C3E /* ShoppingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA175C2265465CB00004C3E /* ShoppingView.swift */; };
 		4AA7B78F25E6F238000D9666 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7B78E25E6F238000D9666 /* MainView.swift */; };
@@ -145,7 +145,7 @@
 				4A3A5DF725E69A3D00DF5E41 /* Assets.xcassets */,
 				4A9143C52667E9DE0004D3CE /* Persistance.swift */,
 				4A3A5DFC25E69A3E00DF5E41 /* Info.plist */,
-				4A91439C2667D72A0004D3CE /* ShoppingModel.xcdatamodeld */,
+				4A91439C2667D72A0004D3CE /* CoreData.xcdatamodeld */,
 				4A3A5DF925E69A3D00DF5E41 /* Preview Content */,
 			);
 			path = RecieptProjectFinal;
@@ -393,7 +393,7 @@
 				4AA7B7AB25E6F2BB000D9666 /* TrendsView.swift in Sources */,
 				4AA7B7CA25E6F786000D9666 /* PageTabView.swift in Sources */,
 				4AA7B7B025E6F54B000D9666 /* Data.swift in Sources */,
-				4A91439E2667D72A0004D3CE /* ShoppingModel.xcdatamodeld in Sources */,
+				4A91439E2667D72A0004D3CE /* CoreData.xcdatamodeld in Sources */,
 				4A9143C62667E9DE0004D3CE /* Persistance.swift in Sources */,
 				4AA7B7E525E6FF85000D9666 /* Node.swift in Sources */,
 				4AA7B7D225E6F817000D9666 /* WalkthroughView.swift in Sources */,
@@ -754,13 +754,13 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		4A91439C2667D72A0004D3CE /* ShoppingModel.xcdatamodeld */ = {
+		4A91439C2667D72A0004D3CE /* CoreData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				4A91439D2667D72A0004D3CE /* ShoppingModel.xcdatamodel */,
 			);
 			currentVersion = 4A91439D2667D72A0004D3CE /* ShoppingModel.xcdatamodel */;
-			path = ShoppingModel.xcdatamodeld;
+			path = CoreData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

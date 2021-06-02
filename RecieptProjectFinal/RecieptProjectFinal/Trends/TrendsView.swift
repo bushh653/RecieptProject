@@ -10,8 +10,8 @@ import SwiftUICharts
 
 struct TrendsView: View {
     
-    @Binding var barchartdata: [(String, Int)]
-    @Binding var linegraphdata: [Double]
+   @Binding var barchartdata: [(String, Int)]
+   @Binding var linegraphdata: [Double]
     
     var body: some View {
         ZStack{
