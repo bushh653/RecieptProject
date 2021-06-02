@@ -16,6 +16,7 @@
 		4A3A5E1125E69A3F00DF5E41 /* RecieptProjectFinalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A5E1025E69A3F00DF5E41 /* RecieptProjectFinalUITests.swift */; };
 		4A91439E2667D72A0004D3CE /* ShoppingModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4A91439C2667D72A0004D3CE /* ShoppingModel.xcdatamodeld */; };
 		4A9143C62667E9DE0004D3CE /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9143C52667E9DE0004D3CE /* Persistance.swift */; };
+		4A9143C82667F8090004D3CE /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A9143C72667F8090004D3CE /* SearchBar.swift */; };
 		4AA175C3265465CB00004C3E /* ShoppingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA175C2265465CB00004C3E /* ShoppingView.swift */; };
 		4AA7B78F25E6F238000D9666 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7B78E25E6F238000D9666 /* MainView.swift */; };
 		4AA7B79725E6F272000D9666 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA7B79625E6F272000D9666 /* HomeView.swift */; };
@@ -67,6 +68,7 @@
 		4A3A5E1225E69A3F00DF5E41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A91439D2667D72A0004D3CE /* ShoppingModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoppingModel.xcdatamodel; sourceTree = "<group>"; };
 		4A9143C52667E9DE0004D3CE /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
+		4A9143C72667F8090004D3CE /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		4AA175C2265465CB00004C3E /* ShoppingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingView.swift; sourceTree = "<group>"; };
 		4AA7B78E25E6F238000D9666 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		4AA7B79625E6F272000D9666 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				4AA7B7F625E70BF2000D9666 /* CardView.swift */,
+				4A9143C72667F8090004D3CE /* SearchBar.swift */,
 				4AA7B7EE25E70BE5000D9666 /* CardItemView.swift */,
 				4AA7B7E925E70071000D9666 /* LinkedList.swift */,
 				4AA7B7E425E6FF85000D9666 /* Node.swift */,
@@ -395,6 +398,7 @@
 				4AA7B7B025E6F54B000D9666 /* Data.swift in Sources */,
 				4A91439E2667D72A0004D3CE /* ShoppingModel.xcdatamodeld in Sources */,
 				4A9143C62667E9DE0004D3CE /* Persistance.swift in Sources */,
+				4A9143C82667F8090004D3CE /* SearchBar.swift in Sources */,
 				4AA7B7E525E6FF85000D9666 /* Node.swift in Sources */,
 				4AA7B7D225E6F817000D9666 /* WalkthroughView.swift in Sources */,
 				4A3A5DF425E69A2700DF5E41 /* RecieptProjectFinalApp.swift in Sources */,

@@ -16,19 +16,22 @@ struct CardView: View {
     var body: some View {
         ZStack{
             Color(.black).ignoresSafeArea(.all)
-            ScrollView(.horizontal){
-                HStack{
-                    Button {
-                        linkedList.add(data: recognizedText)
-                        linkedList.traverse()
-                    } label: {
-                        Text("Add Receipt")
-                    }.padding()
-                    .foregroundColor(.white)
-                    .background(Color("Charcoal"))
-                    .cornerRadius(30)
-                    ForEach(linkedList.traversal, id: \.self) { value in
-                        CardItemView(data: value, linkedList: linkedList)
+            VStack{
+                SearchBar()
+                ScrollView(.horizontal){
+                    HStack{
+                        Button {
+                            linkedList.add(data: recognizedText)
+                            linkedList.traverse()
+                        } label: {
+                            Text("Add Receipt")
+                        }.padding()
+                        .foregroundColor(.white)
+                        .background(Color("Charcoal"))
+                        .cornerRadius(30)
+                        ForEach(linkedList.traversal, id: \.self) { value in
+                            CardItemView(data: value, linkedList: linkedList)
+                        }
                     }
                 }
             }
