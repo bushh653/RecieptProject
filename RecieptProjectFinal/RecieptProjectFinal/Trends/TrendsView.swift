@@ -11,14 +11,14 @@ import SwiftUICharts
 struct TrendsView: View {
     
     @Binding var barchartdata: [(String, Int)]
+    @Binding var linegraphdata: [Double]
     
     var body: some View {
         ZStack{
             Color(.black).ignoresSafeArea(.all)
             VStack{
-                LineChartView(data: [8,23,54,32,12,37,7,23,43], title: "Quantity of Items")
+                LineChartView(data: linegraphdata, title: "Quantity of Items")
                 BarChartView(data: ChartData(values: barchartdata), title: "Quantity of Each Item")
-                PieChartView(data: [8,23,54,32], title: "Title")
             }
         }
     }
